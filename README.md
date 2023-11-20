@@ -1,5 +1,7 @@
 # adva-librenms-description-script
 A Python script to pull port labels from ADVA gear over Netconf and push them into LibreNMS.
+## Warning!
+This script is dependent on **non-standard LibreNMS end-points.** A [pull request](https://github.com/librenms/librenms/pull/15578) to merge these into mainline Libre is open as of `2023-11-20`, but this is still pending approval. Do not expect this script to work on your LibreNMS install at this time.
 ## How to Use
 - Both scripts depend on `ncclient`.
 - You will likely have to change `host_id` on line 36 (see TODO).
